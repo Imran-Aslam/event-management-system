@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootsstrap CDN  -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Font Awesome Icon CDN  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- CSS File  -->
+    <link rel="stylesheet" href="./CSS Files/userBookingHistory.css" />
+    <link rel="stylesheet" href="./CSS Files/createEvent.css">
+    <title>Booking History</title>
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <div id="carouselExampleCaptions">
+            <div class="header-img-part">
+                <div class="header-img">
+                    <img src="./Images/cart1.jpg" class="img-fluid w-100" alt="background-image">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bolder fs-2 text-white" href="#">Event Management</a>
+                    <button class="navbar-toggler text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon pt-1"><i class="fas fa-bars"></i> </span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-2 dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#product">Categories</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Technology Event</a></li>
+                                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="#">Web Designer</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./bookingHistory.html" tabindex="-1" aria-disabled="true">Booked Event</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./createEvent.html" tabindex="-1" aria-disabled="true">Create an Event</a>
+                            </li>
+                            <li class="nav-item mx-2 mb-2">
+                                <!-- <button class="btn btn2 ">Login</button> -->
+                                <button class="btn btn2 rounded-circle h-100" type="submit"> 🧑 </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-container text-center">
+                <div class="text-body">
+                    <div class="content text-white">
+                        <h1 class="fw-bold text-center">Booking History</h1>
+                        <h5 class="top-event-date-time fw-bold">
+                            Home / Booking Cart
+                        </h5>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <!-- Shopping Cart Section  -->
+    <section class="booking-history-shopping-cart-section mt-5">
+        <div class="container">
+            <div class="booked-event-header border-bottom">
+                <h2 class="fw-bold" style="color: purple;">Booked Event History</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 my-5">
+                    <div class="table-responsive-sm">
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Event Name</th>
+                                    <th scope="col">Booked ID</th>
+                                    <th scope="col">Total Tickets</th>
+                                    <th scope="col">Total Price</th>
+                                    <th scope="col">Booked Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="p-3">
+                                        <div class="booking-history-shopping-cart-img">
+                                            <img src="./Images/event1.jpg" class="img-fluid rounded" alt="">
+                                            <div class="booking-history-shopping-cart-name">
+                                                <h6 class="fw-bold">Graphic designer conference 2021</h6>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td class="p-3">
+                                        <p>45324</p>
+                                    </td>
+                                    <td class="p-3">
+                                        <p>2</p>
+                                    </td>
+                                    <td class="p-3">
+                                        <p>3000 Rs.</p>
+                                    </td>
+                                    <td class="p-3">
+                                        <p>September 9, 2021</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="p-3">
+                                        <div class="booking-history-shopping-cart-img">
+                                            <img src="./Images/event6.jpg" class="img-fluid rounded" alt="">
+                                            <div class="booking-history-shopping-cart-name">
+                                                <h6 class="fw-bold">Gaming Development Seminar 2021</h6>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td class="p-3">
+                                        <p>55724</p>
+                                    </td>
+                                    <td class="p-3">
+                                        <p>1</p>
+                                    </td>
+                                    <td class="p-3">
+                                        <p>1500 Rs.</p>
+                                    </td>
+                                    <td class="p-3">
+                                        <p>September 8, 2021</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="p-3">
+                                        <div class="booking-history-shopping-cart-img">
+                                            <img src="./Images/event4.jpg" class="img-fluid rounded" alt="">
+                                            <div class="booking-history-shopping-cart-name">
+                                                <h6 class="fw-bold">Micro-chips Conference 2021</h6>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td class="p-3">
+                                        <p>89345</p>
+                                    </td>
+                                    <td class="p-3">
+                                        <p>1</p>
+                                    </td>
+                                    <td class="p-3">
+                                        <p>1000 Rs.</p>
+                                    </td>
+                                    <td class="p-3">
+                                        <p>September 8, 2021</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section  -->
+    <footer>
+        <div class="container">
+            <div class="row border-bottom mt-5 mb-1">
+                <div class="col-md-6 col-12">
+                    <div class="about">
+                        <div class="title pt-3 pb-3 mx-3">
+                            <h3 style="font-family: cursive;">
+                                Event Management</h3>
+                        </div>
+                        <div class="text mx-3 pb-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua.
+                            </p>
+                            <p><i class="fas fa-map-marker-alt me-2"></i> Brisbane, Australia</p>
+                            <p><i class="fas fa-phone-alt me-2"></i> 123-456-7890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 border-left">
+                    <div class="title pt-3 pb-3">
+                        <h3 style="font-family: cursive;">Find us</h3>
+                    </div>
+                    <div class="map-responsive">
+                        <iframe class="img-fluid w-100 rounded" src="https://www.google.com/maps/d/embed?mid=1Pj2ly5dkJoaHqvs6qMmwFA6uajQ" frameborder="0" style="border:0; height:200px" allowfullscreen="" aria-hidden="false" tabindex="0">
+                        </iframe>
+                    </div>
+                    <div class="social pt-4 text-center">
+                        <a href="#"><i class="fab fa-facebook-square mr-1"></i></a>
+                        <a href="#"><i class="fab fa-twitter mr-1"></i></a>
+                        <a href="#"><i class="fab fa-pinterest mr-1"></i></a>
+                        <a href="#"><i class="fab fa-instagram mr-1"></i></a>
+                        <a href="#"><i class="fab fa-linkedin mr-1"></i></a>
+                        <a href="#"><i class="fab fa-youtube mr-1"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 text-center">
+                    <p style="font-size: small; font-weight:700;">© 2021 Event Management. All rights are reserved.</p>
+                </div>
+                <div class="col-md-6 col-12 text-muted text-center" id="links">
+                    <p>
+                        <a href="#"><span>Home</span></a>
+                        <a href="#"><span>Contact us</span></a>
+                        <a href="#"><span>Privacy Policy</span></a>
+                        <a href="#"><span>Terms and Conditions</span></a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

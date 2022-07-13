@@ -1,0 +1,180 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Times New Roman";
+}
+
+
+/* .container {
+    max-width: 1140px;
+} */
+
+p {
+    font-size: 14px;
+}
+
+.header-img img {
+    height: 80vh;
+    object-fit: cover;
+}
+
+header .container {
+    padding: 5% 10% 0% 10%;
+    position: absolute;
+    bottom: 84%;
+    left: 6%;
+    /* left: 10%; */
+    /* background: transparent; */
+}
+
+.nav-link,
+.nav-item {
+    color: white;
+}
+
+.nav-item:hover,
+.nav-link:hover {
+    color: rgb(251, 251, 97);
+}
+
+.text-container {
+    position: absolute;
+    top: 190%;
+    width: 75%;
+}
+
+.top-event-date-time {
+    color: rgb(251, 251, 97);
+}
+
+.btn1 {
+    background: rgb(236, 236, 236);
+    color: black;
+    box-shadow: none !important;
+    border: none;
+    outline: none;
+}
+
+.btn1:hover {
+    background: rgb(251, 251, 97);
+    color: black;
+}
+
+.btn2 {
+    background: purple;
+    color: white;
+    box-shadow: none !important;
+    border: none;
+    outline: none;
+}
+
+.btn2:hover {
+    background: rgb(251, 251, 97);
+    color: black;
+}
+
+.form-control {
+    outline: none;
+    box-shadow: none !important;
+}
+
+#request-attach-file {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    padding: 1% 2%;
+    background: rgba(108, 117, 125, 0.69);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* date select  */
+
+#day,
+#year,
+#month {
+    /* height: 30px; */
+    padding: 1%;
+}
+
+
+/* Footer ki CSS  */
+
+footer {
+    background: #e7e7e7;
+    opacity: 0.7;
+    padding: 5px 0;
+    margin-top: 5%;
+    color: #000;
+}
+
+footer .container .row .col-md-6 {
+    padding: 10px 30px;
+}
+
+footer .container .row .col-md-6 .social a {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 20px;
+    /* color: #999999; */
+    color: black;
+}
+
+footer .container .row .col-md-6 .social a:hover {
+    color: orange;
+}
+
+footer .container .row #links a {
+    font-size: small;
+    font-weight: 700;
+    margin: 0 5px;
+    /* color: #999999; */
+    text-decoration: none;
+    color: black;
+}
+
+footer .container .row #links a:hover {
+    color: purple;
+}
+
+footer i {
+    color: purple;
+}
+
+footer i:hover {
+    color: orange;
+}
+
+
+/* Media Query  */
+
+@media only screen and (max-width: 978px) {
+    .text-container {
+        position: absolute;
+        top: 90%;
+        width: 90%;
+    }
+    header .container {
+        padding: 5% 5% 0% 5%;
+        position: absolute;
+        bottom: 50%;
+        left: 0%;
+        top: 2%;
+    }
+    .navbar-collapse {
+        z-index: 1;
+    }
+    .navbar-nav {
+        background-color: white;
+    }
+    .navbar-nav .nav-item a {
+        color: black;
+    }
+    .available-seats-portion .container .row .col-lg-3 {
+        margin-top: 15%;
+    }
+}

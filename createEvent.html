@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootsstrap CDN  -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Font Awesome Icon CDN  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- CSS File  -->
+    <link rel="stylesheet" href="./CSS Files/createEvent.css" />
+    <title>Create an Event</title>
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <div id="carouselExampleCaptions">
+            <div class="header-img-part">
+                <div class="header-img">
+                    <img src="./Images/eventMic.jpg" class="img-fluid w-100" alt="background-image">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bolder fs-2 text-white" href="#">Event Management</a>
+                    <button class="navbar-toggler text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon pt-1"><i class="fas fa-bars"></i> </span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-2 dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#product">Categories</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Technology Event</a></li>
+                                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="#">Web Designer</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./bookingHistory.html" tabindex="-1" aria-disabled="true">Booked Event</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./createEvent.html" tabindex="-1" aria-disabled="true">Create an Event</a>
+                            </li>
+                            <li class="nav-item mx-2 mb-2">
+                                <!-- <button class="btn btn2 ">Login</button> -->
+                                <button class="btn btn2 rounded-circle h-100" type="submit"> 🧑 </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-container text-center">
+                <div class="text-body">
+                    <div class="content text-white">
+                        <h1 class="fw-bold text-center">Create an Event</h1>
+                        <h5 class="top-event-date-time fw-bold">
+                            Home / Create an Event
+                        </h5>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <!-- Event Form Section  -->
+    <section class="event-form-section my-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold">Welcome to Create New Event</h1>
+                <p class="text-muted">Fill the given form accurately.</p>
+            </div>
+            <form class="needs-validation" validate>
+                <!-- Event Basic Information  -->
+                <div class="create-event-basic-information">
+                    <div class="create-event-basic-information-heading border-bottom">
+                        <h2 class="fw-bold" style="color: purple;">Event Information</h2>
+                    </div>
+                    <div class="create-event-basic-information-inputs my-3">
+                        <div class="row">
+                            <div class="col-md-5 col-12">
+                                <label for="validationCustom01" class="form-label fw-bold">Event name:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Event Name" required>
+                                <div class="invalid-feedback">
+                                    Enter event name.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-7 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Event description:</label>
+                                <textarea class="form-control" placeholder="Event description" rows="8" required>
+                                </textarea>
+                                <small class="text-muted">Write breif description of event.</small>
+                                <div class="invalid-feedback">
+                                    Event description is must.
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-12 mt-3">
+                                <div class="form-group">
+                                    <label for="exampleFormControlFile1" class="form-label fw-bold">Event image:</label><br>
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1" required hidden />
+                                    <label class="form-check-label ms-2" id="request-attach-file" for="exampleFormControlFile1">
+                                      <i class="fa fa-paperclip me-2" aria-hidden="true"></i>
+                                        Attach file
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        File is not attached.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event date and location  -->
+                <div class="create-event-date-location my-5">
+                    <div class="create-event-date-location-heading border-bottom">
+                        <h2 class="fw-bold" style="color: purple;">Event Date and Location</h2>
+                    </div>
+                    <div class="create-event-date-location-inputs">
+                        <div class="row create-event-date">
+                            <div class="col-sm-6 col-12 mt-3">
+                                <label for="year" class="form-label fw-bold">Event starting date:</label>
+                                <div class="event-date d-flex flex-row">
+                                    <select id="year" name="year" class="form-select" id="validationTooltip01" required>
+                                        <option>year</option>
+                                        <option value="2020">2021</option>
+                                        <option value="2021">2022</option>
+                                    </select>
+                                    <select id="month" name="month" class="form-select ms-4" id="validationTooltip02" required>
+                                        <option>month</option>
+                                        <option value="01">January</option>
+                                        <option value="02">February</option>
+                                        <option value="03">March</option>
+                                        <option value="04">April</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">August</option>
+                                        <option value="09">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    <select id="day" name="day" class="form-select ms-4" id="validationTooltip03" required>
+                                        <option>day</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12 mt-3">
+                                <label for="year" class="form-label fw-bold">Event ending date:</label>
+                                <div class="event-date d-flex flex-row">
+                                    <select id="year" name="year" class="form-select" id="validationTooltip04" required>
+                                        <option>year</option>
+                                        <option value="2020">2021</option>
+                                        <option value="2021">2022</option>
+                                    </select>
+                                    <select id="month" name="month" class="form-select ms-4" id="validationTooltip05" required>
+                                        <option>month</option>
+                                        <option value="01">January</option>
+                                        <option value="02">February</option>
+                                        <option value="03">March</option>
+                                        <option value="04">April</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">August</option>
+                                        <option value="09">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+                                    <select id="day" name="day" class="form-select ms-4" id="validationTooltip06" required>
+                                        <option>day</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-5 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Event location:</label>
+                                <textarea class="form-control" placeholder="Event Location" rows="3" required>
+                                </textarea>
+                                <small class="text-muted">Write address like: Place, City, Country.</small>
+                                <div class="invalid-feedback">
+                                    Event address is must.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Event Schedule  -->
+                <div class="create-event-schedule my-5">
+                    <div class="create-event-schedule-header border-bottom">
+                        <h2 class="fw-bold" style="color: purple;">Event Schedule</h2>
+                    </div>
+                    <div class="create-event-schedule-body">
+                        <div class="row">
+                            <div class="col-md-4 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Day 1 host name:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Host Name" required>
+                                <small class="text-muted">Like, John Smith</small>
+                                <div class="invalid-feedback">
+                                    host name is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Day 1 session topic:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Topic" required>
+                                <small class="text-muted">e.g., Welcome and Intro</small>
+                                <div class="invalid-feedback">
+                                    day topic is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Session starting and ending time:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Session time" required>
+                                <small class="text-muted">write session time like: 10AM - 2PM</small>
+                                <div class="invalid-feedback">
+                                    day topic is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Day 2 host name:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Host Name" required>
+                                <small class="text-muted">Like, John Smith</small>
+                                <div class="invalid-feedback">
+                                    host name is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Day 2 session topic:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Topic" required>
+                                <small class="text-muted">e.g., Welcome and Intro</small>
+                                <div class="invalid-feedback">
+                                    day topic is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Session starting and ending time:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Session time" required>
+                                <small class="text-muted">write session time like: 10AM - 2PM</small>
+                                <div class="invalid-feedback">
+                                    day topic is missing.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-schedule-button mb-4 mt-4 text-center">
+                            <button class="btn btn2">Add one more day</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event Speakers  -->
+                <div class="create-event-speakers my-5">
+                    <div class="create-event-speakers-heading border-bottom">
+                        <h2 class="fw-bold" style="color: purple;">Event Speakers</h2>
+                    </div>
+                    <div class="create-event-speakers-body">
+                        <div class="row">
+                            <div class="col-md-2 col-6 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Speaker name:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Speaker Name" required>
+                                <div class="invalid-feedback">
+                                    speaker name is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-6 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Profession:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Speaker profession" required>
+                                <small class="text-muted">Like, Software Engineer, CEO of Google, UX/UI Designer</small>
+                                <div class="invalid-feedback">
+                                    speaker profession is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Linkedin link:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Linkedin Profile Link" required>
+                                <div class="invalid-feedback">
+                                    linkedin profile is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Gmail email:</label>
+                                <input type="email" class="form-control" id="validationCustom01" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    email is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-3">
+                                <div>
+                                    <label for="formFile" class="form-label fw-bold">Speaker image:</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-6 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Speaker name:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Speaker Name" required>
+                                <div class="invalid-feedback">
+                                    speaker name is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-6 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Profession:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Speaker profession" required>
+                                <small class="text-muted">Like, Software Engineer, CEO of Google, UX/UI Designer</small>
+                                <div class="invalid-feedback">
+                                    speaker profession is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Linkedin link:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Linkedin Profile Link" required>
+                                <div class="invalid-feedback">
+                                    linkedin profile is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Gmail email:</label>
+                                <input type="email" class="form-control" id="validationCustom01" placeholder="Email" required>
+                                <div class="invalid-feedback">
+                                    email is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-3">
+                                <div>
+                                    <label for="formFile" class="form-label fw-bold">Speaker image:</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-speakers-button mb-4 mt-4 text-center">
+                        <button class="btn btn2">Add more speaker</button>
+                    </div>
+                </div>
+                <!-- Event Space and Ticket Rupess  -->
+                <div class="create-event-space-ticket my-5">
+                    <div class="create-event-space-ticket-header border-bottom">
+                        <h2 class="fw-bold" style="color: purple;">Event Space and Ticket Price</h2>
+                    </div>
+                    <div class="create-event-space-ticket-body">
+                        <div class="row">
+                            <div class="col-md-5 col-6 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Total space available:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Space Available" required>
+                                <div class="invalid-feedback">
+                                    total space is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-6 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Price of one ticket:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Price of Ticket" required>
+                                <small class="text-muted">Write price in Dollars. Like, $1500.</small>
+                                <div class="invalid-feedback">
+                                    total space is missing.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Event sponsors  -->
+                <div class="create-event-sponsors-part my-5">
+                    <div class="create-event-sponsors-part-heading border-bottom">
+                        <h2 class="fw-bold" style="color: purple;">Event Sponsors</h2>
+                    </div>
+                    <div class="create-event-sponsors-part-body">
+                        <div class="row">
+                            <div class="col-md-5 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Sponsor name:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Space Available" required>
+                                <small class="text-muted">Like, Google, CupCakery</small>
+                                <div class="invalid-feedback">
+                                    Sponsor name is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-12 mt-3">
+                                <div>
+                                    <label for="formFile" class="form-label fw-bold">Company Logo:</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-12 mt-3">
+                                <label for="validationCustom01" class="form-label fw-bold">Sponsor name:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Space Available" required>
+                                <small class="text-muted">Like, Google, CupCakery</small>
+                                <div class="invalid-feedback">
+                                    Sponsor name is missing.
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-12 mt-3">
+                                <div>
+                                    <label for="formFile" class="form-label fw-bold">Company Logo:</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-schedule-button mb-4 mt-4 text-center">
+                            <button class="btn btn2">Add more sponsors</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-dark w-25 w-auto" type="submit">Submit Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer Section  -->
+    <footer>
+        <div class="container">
+            <div class="row border-bottom mt-5 mb-1">
+                <div class="col-md-6 col-12">
+                    <div class="about">
+                        <div class="title pt-3 pb-3 mx-3">
+                            <h3 style="font-family: cursive;">
+                                Event Management</h3>
+                        </div>
+                        <div class="text mx-3 pb-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua.
+                            </p>
+                            <p><i class="fas fa-map-marker-alt me-2"></i> Brisbane, Australia</p>
+                            <p><i class="fas fa-phone-alt me-2"></i> 123-456-7890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 border-left">
+                    <div class="title pt-3 pb-3">
+                        <h3 style="font-family: cursive;">Find us</h3>
+                    </div>
+                    <div class="map-responsive">
+                        <iframe class="img-fluid w-100 rounded" src="https://www.google.com/maps/d/embed?mid=1Pj2ly5dkJoaHqvs6qMmwFA6uajQ" frameborder="0" style="border:0; height:200px" allowfullscreen="" aria-hidden="false" tabindex="0">
+                        </iframe>
+                    </div>
+                    <div class="social pt-4 text-center">
+                        <a href="#"><i class="fab fa-facebook-square mr-1"></i></a>
+                        <a href="#"><i class="fab fa-twitter mr-1"></i></a>
+                        <a href="#"><i class="fab fa-pinterest mr-1"></i></a>
+                        <a href="#"><i class="fab fa-instagram mr-1"></i></a>
+                        <a href="#"><i class="fab fa-linkedin mr-1"></i></a>
+                        <a href="#"><i class="fab fa-youtube mr-1"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 text-center">
+                    <p style="font-size: small; font-weight:700;">© 2021 Event Management. All rights are reserved.</p>
+                </div>
+                <div class="col-md-6 col-12 text-muted text-center" id="links">
+                    <p>
+                        <a href="#"><span>Home</span></a>
+                        <a href="#"><span>Contact us</span></a>
+                        <a href="#"><span>Privacy Policy</span></a>
+                        <a href="#"><span>Terms and Conditions</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootsstrap CDN  -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Font Awesome Icon CDN  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- CSS File  -->
+    <link rel="stylesheet" href="./CSS Files/eventDetail.css" />
+    <title>Event Detail</title>
+</head>
+
+<body>
+    <!-- Event Detail Page -->
+
+    <!-- Header  -->
+    <header>
+        <div id="carouselExampleCaptions">
+            <div class="header-img-part">
+                <div class="header-img">
+                    <img src="https://preview.colorlib.com/theme/meetup/images/bg_1.jpg.webp" class="img-fluid w-100" alt="background-image">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bolder fs-2 text-white" href="#">Event Management</a>
+                    <button class="navbar-toggler text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon pt-1"><i class="fas fa-bars"></i> </span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-2 dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#product">Categories</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Technology Event</a></li>
+                                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="#">Web Designer</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./bookingHistory.html" tabindex="-1" aria-disabled="true">Booked Event</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./createEvent.html" tabindex="-1" aria-disabled="true">Create an Event</a>
+                            </li>
+                            <li class="nav-item mx-2 mb-2">
+                                <button class="btn btn2 ">Login</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="text-container text-center">
+                <div class="text-body">
+                    <div class="content text-white">
+                        <h1 class="fw-bold text-center">Event Details</h1>
+                        <h5 class="top-event-date-time fw-bold">
+                            Home / Event
+                        </h5>
+                    </div>
+
+                </div>
+            </div>
+    </header>
+    <div class="available-seats-portion">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <div class="single-counter text-center mt-100 wow fadeIn" data-wow-duration="1s" data-wow-delay="0s" style="visibility: visible; animation-duration: 1s; animation-delay: 0s; animation-name: fadeIn;">
+                        <div class="counter-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="counter-content">
+                            <span class="count counter">4</span>
+                            <p class="text">Expert Speaker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="single-counter text-center mt-100 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeIn;">
+                        <div class="counter-icon">
+                            <i class="far fa-lightbulb"></i>
+                        </div>
+                        <div class="counter-content">
+                            <span class="count counter">800</span>
+                            <p class="text">Seats Available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="single-counter text-center mt-100 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
+                        <div class="counter-icon">
+                            <i class="fas fa-business-time"></i>
+                        </div>
+                        <div class="counter-content">
+                            <span class="count counter">8</span>
+                            <p class="text">Sponsors</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="single-counter text-center mt-100 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.9s; animation-name: fadeIn;">
+                        <div class="counter-icon">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="counter-content">
+                            <span class="count counter">6</span>
+                            <p class="text">Sessions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event description Section  -->
+    <section class="event-description-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div>
+                        <img src="./Images/conference1.jpg" class="img-fluid w-100 rounded" alt="event-image">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 pb-4 ps-4 pe-4 pt-1">
+                    <div class="card-description">
+                        <div class="card-heading">
+                            <h2 class=" mt-3 mb-3" style="font-size: 40px; font-weight:bold">Marketing Confernece <span style="color: purple;">2021</span></h2>
+                        </div>
+                        <div class="card-event-description">
+                            <p class="pt-3 text-muted">There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.rere arge many variations ohf passages of sorem gpsum ilable.
+                                <br><br> There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                                paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            </p>
+                        </div>
+                        <div class="event-location mt-5">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
+                                    <div class="single-caption mb-3 d-flex align-items-center">
+                                        <div class="caption-icon">
+                                            <i class="fas fa-headset"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h5>Where</h5>
+                                            <p>Brisbane, Australia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
+                                    <div class="single-caption mb-3 d-flex align-items-center">
+                                        <div class="caption-icon">
+                                            <i class="fas fa-book-reader"></i>
+                                        </div>
+                                        <div class="ms-3 caption">
+                                            <h5>When</h5>
+                                            <p>Jan. 21. 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-book-button mt-4 text-center">
+                            <button class="btn btn2 w-50" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ticketsModal">GET TICKETS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Model  -->
+    <div class="modal fade" id="ticketsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fw-bold" id="staticBackdropLabel" style="color: purple;">Confirm your Tickets</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body my-3">
+                    <form class="needs-validation" validate>
+                        <div class="ticket-number-field">
+                            <label for="validationCustom01" class="form-label fw-bold">Total Tickets</label>
+                            <input type="number" class="form-control" id="validationCustom01" required>
+                            <div class="invalid-feedback">
+                                Please enter the valid ticket.
+                            </div>
+                        </div>
+                        <div class="ticket-price-field mt-2">
+                            <label for="validationCustom01" class="form-label fw-bold">Price of one ticket</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="$150" disabled>
+                            <div class="invalid-feedback">
+                                Please enter the valid ticket.
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button type="submit" class="btn btn1 w-50">Buy</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Speakers Section  -->
+    <section class="event-speakers-section">
+        <div class="container-fluid text-center pt-3">
+            <h1 class="fw-bold" style="color: purple;">Our Speakers</h1>
+            <p class="my-3">The automated process starts as soon as your clothes go into the machine. Duis cursus, miquis viverra ornare.</p>
+            <div class="container text-center">
+                <div class="row pt-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-6 pt-2">
+                        <div class="img-block mb-5 member-image">
+                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                            <div class="content mt-2">
+                                <h4 class="fw-bold">Zain Knob</h4>
+                                <p class="text-muted">Mechanical Engineer</p>
+                            </div>
+                            <div class="icons">
+                                <a href="#" class="text-decoration-none" style="color: purple;">
+                                    <i class="fab fa-facebook-f pe-3"></i>
+                                    <i class="fab fa-twitter pe-2 ps-2"></i>
+                                    <i class="fab fa-google-plus-g ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-6 pt-2">
+                        <div class="img-block mb-5 member-image">
+                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" height="100px" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                            <div class="content mt-2">
+                                <h4 class="fw-bold">Syndia Lee</h4>
+                                <p class="text-muted">Software Engineer</p>
+                            </div>
+                            <div class="icons">
+                                <a href="#" class="text-decoration-none" style="color: purple;">
+                                    <i class="fab fa-facebook-f pe-3"></i>
+                                    <i class="fab fa-twitter pe-2 ps-2"></i>
+                                    <i class="fab fa-google-plus-g ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-6 pt-2">
+                        <div class="img-block mb-5 member-image">
+                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                            <div class="content mt-2">
+                                <h4 class="fw-bold">Noel Flantier</h4>
+                                <p class="text-muted">Joomla Specialist</p>
+                            </div>
+                            <div class="icons">
+                                <a href="#" class="text-decoration-none" style="color: purple;">
+                                    <i class="fab fa-facebook-f pe-3"></i>
+                                    <i class="fab fa-twitter pe-2 ps-2"></i>
+                                    <i class="fab fa-google-plus-g ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-6 pt-2">
+                        <div class="img-block mb-5 member-image">
+                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                            <div class="content mt-2">
+                                <h4 class="fw-bold">Bobby Doe</h4>
+                                <p class="text-muted">Street Artist</p>
+                            </div>
+                            <div class="icons">
+                                <a href="#" class="text-decoration-none" style="color: purple;">
+                                    <i class="fab fa-facebook-f pe-3"></i>
+                                    <i class="fab fa-twitter pe-2 ps-2"></i>
+                                    <i class="fab fa-google-plus-g ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-6 pt-2">
+                        <div class="img-block mb-5 member-image">
+                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                            <div class="content mt-2">
+                                <h4 class="fw-bold">Syndia Lee</h4>
+                                <p class="text-muted">Software Engineer</p>
+                            </div>
+                            <div class="icons">
+                                <a href="#" class="text-decoration-none" style="color: purple;">
+                                    <i class="fab fa-facebook-f pe-3"></i>
+                                    <i class="fab fa-twitter pe-2 ps-2"></i>
+                                    <i class="fab fa-google-plus-g ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-6 pt-2">
+                        <div class="img-block mb-5 member-image">
+                            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                            <div class="content mt-2">
+                                <h4 class="fw-bold">Zain Knob</h4>
+                                <p class="text-muted">Mechanical Engineer</p>
+                            </div>
+                            <div class="icons">
+                                <a href="#" class="text-decoration-none" style="color: purple;">
+                                    <i class="fab fa-facebook-f pe-3"></i>
+                                    <i class="fab fa-twitter pe-2 ps-2"></i>
+                                    <i class="fab fa-google-plus-g ps-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event schedule Section  -->
+    <section class="event-schedule-section">
+        <div class="container">
+            <div class="section-tittle text-center mb-80">
+                <h2 class="fw-bold" style="color: purple;">Event Schedule</h2>
+                <p class="my-3">There arge many variations ohf passages of sorem gp ilable, but the majority have ssorem gp iluffe.</p>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-6">
+                        <div class="schedule-box">
+                            <div class="time">
+                                <time datetime="09:00">09:00 am</time> - <time datetime="22:00">10:00 am</time>
+                            </div>
+                            <h3>Welcome and intro</h3>
+                            <p>Brisbane, Australia</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-6">
+                        <div class="schedule-box">
+                            <div class="time">
+                                <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                            </div>
+                            <h3>Tips and share</h3>
+                            <p>Brisbane, Australia</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-6">
+                        <div class="schedule-box">
+                            <div class="time">
+                                <time datetime="10:00">10:00 am</time> - <time datetime="22:00">10:00 am</time>
+                            </div>
+                            <h3>View from the top</h3>
+                            <p>Brisbane, Australia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments or Reviews  -->
+    <section class="comment-section">
+        <div class="container">
+            <div class="comments my-4 my-md-5 pt-4 py-md-4">
+                <div class="heading d-flex border-bottom">
+                    <h3 class="mb-4" style="font-family: Times new Roman; font-size:50px;color:purple">Comments</h2>
+                        <span class="align-self-center">(25)</span>
+                </div>
+                <ul class="list-unstyled">
+                    <li class="media d-flex">
+                        <img class="me-3 img-fluid rounded" src="./Images/avatar2.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-2 fw-bold">Anna Smith</h5>
+                            <!--Review-->
+                            <i class="fas fa-star ichecked"> </i>
+                            <i class="fas fa-star ichecked"> </i>
+                            <i class="fas fa-star ichecked"> </i>
+                            <i class="fas fa-star ichecked"> </i>
+                            <i class="fas fa-star ichecked"> </i>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                                congue felis in faucibus.</p>
+                        </div>
+                    </li>
+                    <li class="media d-flex my-4">
+                        <img class="me-3 rounded" src="./Images/avatar4.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-2 fw-bold">Tom Brown</h5>
+                            <!--Review-->
+                            <i class="fas fa-star ichecked"> </i>
+                            <i class="fas fa-star ichecked"> </i>
+                            <i class="fas fa-star ichecked"> </i>
+                            <i class="fas fa-star ichecked"> </i>
+                            <i class="fas fa-star "> </i>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                                congue felis in faucibus.</p>
+                        </div>
+                    </li>
+                    <li class="media d-flex">
+                        <img class="me-3 rounded" src="./Images/avatar2.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-2 fw-bold">Natalie Doe</h5>
+                            <!--Review-->
+                            <i class="fas fa-star ichecked"> </i>
+                            <i class="fas fa-star ichecked"> </i>
+                            <i class="fas fa-star ichecked"> </i>
+                            <i class="fas fa-star "> </i>
+                            <i class="fas fa-star "> </i>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia
+                                congue felis in faucibus.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="load-btn text-center pt-5">
+                    <button class="btn btn-outline-dark w-50 fw-bold" style="height: 50px;"> Load more
+                        Comments</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Comments Section  -->
+    <section>
+        <div class="comments-area my-md-5 pb-3 pb-md-3 text-center">
+            <div class=" img">
+                <img class=" img-fluid" src="./Images/avatar2.png" alt="review">
+            </div>
+            <div class="icons-part">
+                <p class="pt-4" style="font-size: 20px; font-weight:bold">Add a Comment</p>
+                <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 star"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
+                </div>
+            </div>
+            <div class="btn-textarea mt-4">
+                <div class="comment-area">
+                    <textarea class="form-control w-50 mx-auto" placeholder="what is your view?" rows="8">
+                    </textarea>
+                </div>
+                <div class="mt-4">
+                    <button class="btn btn-outline-secondary send px-5">Post Comment
+                            <i class="fa fa-long-arrow-right ml-1"></i>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section  -->
+    <section class="event-partener-section">
+        <div class="container text-center">
+            <h1 class="fw-bold" style="color: purple; opacity: 0.9;">Event Partners</h1>
+            <div class="row">
+                <div class="col-sm-3 col-6">
+                    <a class="partner-box partner-box-1"></a>
+                </div>
+                <div class="col-sm-3 col-6">
+                    <a class="partner-box partner-box-2"></a>
+                </div>
+                <div class="col-sm-3 col-6">
+                    <a class="partner-box partner-box-3"></a>
+                </div>
+                <div class="col-sm-3 col-6">
+                    <a class="partner-box partner-box-4"></a>
+                </div>
+                <div class="col-sm-3 col-6">
+                    <a class="partner-box partner-box-5"></a>
+                </div>
+                <div class="col-sm-3 col-6">
+                    <a class="partner-box partner-box-6"></a>
+                </div>
+                <div class="col-sm-3 col-6">
+                    <a class="partner-box partner-box-7"></a>
+                </div>
+                <div class="col-sm-3 col-6">
+                    <a class="partner-box partner-box-8"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section  -->
+    <footer>
+        <div class="container">
+            <div class="row border-bottom mt-5 mb-1">
+                <div class="col-md-6 col-12">
+                    <div class="about">
+                        <div class="title pt-3 pb-3 mx-3">
+                            <h3 style="font-family: cursive;">
+                                Event Management</h3>
+                        </div>
+                        <div class="text mx-3 pb-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua.
+                            </p>
+                            <p><i class="fas fa-map-marker-alt me-2"></i> Brisbane, Australia</p>
+                            <p><i class="fas fa-phone-alt me-2"></i> 123-456-7890</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-12 border-left">
+                    <div class="title pt-3 pb-3">
+                        <h3 style="font-family: cursive;">Find us</h3>
+                    </div>
+                    <div class="map-responsive">
+                        <iframe class="img-fluid w-100 rounded" src="https://www.google.com/maps/d/embed?mid=1Pj2ly5dkJoaHqvs6qMmwFA6uajQ" frameborder="0" style="border:0; height:200px" allowfullscreen="" aria-hidden="false" tabindex="0">
+                        </iframe>
+                    </div>
+                    <div class="social pt-4 text-center">
+                        <a href="#"><i class="fab fa-facebook-square mr-1"></i></a>
+                        <a href="#"><i class="fab fa-twitter mr-1"></i></a>
+                        <a href="#"><i class="fab fa-pinterest mr-1"></i></a>
+                        <a href="#"><i class="fab fa-instagram mr-1"></i></a>
+                        <a href="#"><i class="fab fa-linkedin mr-1"></i></a>
+                        <a href="#"><i class="fab fa-youtube mr-1"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 text-center">
+                    <p style="font-size: small; font-weight:700;">© 2021 Event Management. All rights are reserved.</p>
+                </div>
+                <div class="col-md-6 col-12 text-muted text-center" id="links">
+                    <p>
+                        <a href="#"><span>Home</span></a>
+                        <a href="#"><span>Contact us</span></a>
+                        <a href="#"><span>Privacy Policy</span></a>
+                        <a href="#"><span>Terms and Conditions</span></a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
